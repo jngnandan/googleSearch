@@ -44,10 +44,10 @@ class GoogleSuggestions extends Component {
             <div className="flex flex-col justify-center items-center h-screen text-center px-10">
                 <div className="h-80">
                     <div className="flex flex-col justify-center items-center">
-                        <img className="w-56 p-3" src="https://assets.ccbp.in/frontend/react-js/google-logo.png" />
-                        <input value={searchValue} onChange={this.updateSearch} type="search" placeholder="Search" className="py-2 w-96 pl-3  pr-2 border-2 border-gray-300 rounded" />
+                        <img className="w-56 p-3 " src="https://assets.ccbp.in/frontend/react-js/google-logo.png" />
+                        <input value={searchValue} onChange={this.updateSearch} type="search" placeholder="Search" className="rounded-lg bg-white shadow py-2 w-96 pl-3  pr-2 border-3 border-gray-300 rounded" />
                     </div>
-                    <ul className="card border-2 border-gray-300 p-1.5 w-96">
+                    <ul className="rounded-lg bg-white card border-3 shadow border-gray-300 p-1.5 w-96">
                         {searchList.map(eachItem => (
                             <SuggestionItem selectSearch={this.selectSearch} searchList={eachItem} key={eachItem.id} />
                         ))}
